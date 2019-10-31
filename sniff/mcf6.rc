@@ -1,0 +1,245 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\mcf6.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\mcf6.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于Lixsniff"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "mcf6，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MCF6_DIALOG DIALOGEX 0, 0, 619, 406
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "xxx教研室--视频协议分析器"
+FONT 9, "新宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,65,595,113
+    PUSHBUTTON      "开始",IDC_BUTTON1,9,4,48,28
+    PUSHBUTTON      "结束",IDC_BUTTON2,57,4,48,28
+    COMBOBOX        IDC_COMBO1,11,47,204,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_FULLROWSELECT | TVS_INFOTIP | WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,185,167,218
+    EDITTEXT        IDC_EDIT1,191,184,410,92,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "统计数据",IDC_STATIC,191,284,411,112
+    EDITTEXT        IDC_EDIT2,233,297,64,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,233,319,64,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,233,345,63,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,233,368,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "TCP包",IDC_STATIC,201,301,29,15
+    LTEXT           "ICMP包",IDC_STATIC,201,349,29,15
+    LTEXT           "UDP包",IDC_STATIC,201,323,30,15
+    LTEXT           "IPV6包",IDC_STATIC,201,370,30,15
+    COMBOBOX        IDC_COMBO2,453,14,155,30,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT6,484,319,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ARP包",IDC_STATIC,450,323,29,15
+    EDITTEXT        IDC_EDIT7,351,296,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "HTTP包",IDC_STATIC,312,300,29,15
+    EDITTEXT        IDC_EDIT8,484,343,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "其它",IDC_STATIC,450,347,31,15
+    EDITTEXT        IDC_EDIT9,484,366,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "总计",IDC_STATIC,450,369,31,15
+    PUSHBUTTON      "读取",IDC_BUTTON4,153,4,48,28
+    PUSHBUTTON      "保存",IDC_BUTTON5,105,4,48,28
+    EDITTEXT        IDC_EDIT10,351,368,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "IPV4包",IDC_STATIC,312,371,30,15
+    EDITTEXT        IDC_EDIT11,351,344,63,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ICMPv6包",IDC_STATIC,312,348,34,15
+    EDITTEXT        IDC_EDT_FILTER,299,48,193,14,ES_AUTOHSCROLL
+    LTEXT           "过滤规则:",IDC_STATIC,257,51,37,8
+    LTEXT           "SIP包",IDC_STATIC,450,300,29,15
+    LTEXT           "RTP包",IDC_STATIC,312,323,29,15
+    EDITTEXT        IDC_EDIT12,351,319,63,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT13,484,295,63,17,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "mcf6.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "mcf6.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MCF6_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 618
+        VERTGUIDE, 617
+        BOTTOMMARGIN, 403
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MCF6_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 mcf6(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\mcf6.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
